@@ -116,6 +116,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
     margin-top: 40px;
     box-sizing: border-box;
     padding: 40px;
@@ -125,6 +126,15 @@ body {
     background: rgba(0, 0, 0, 0.2);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
+}
+
+.event-card__bookmark-icon {
+    position: absolute;
+    right: 41px;
+}
+
+.event-card__bookmark-icon:hover, .event-card__bookmark-icon:focus {
+    opacity: 0.2;
 }
 
 .event-card__date-container {
