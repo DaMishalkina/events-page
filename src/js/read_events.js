@@ -1,18 +1,16 @@
 
 
 const EventCard = (()=>{
-
-    const title = document.querySelector('.event-card__event-title');
-    /*const eventContainer = document.querySelector('.event-card');*/
     return {
         setData:(data) => {
             for (let event of data){
                 const card = document.createElement('div');
                 card.className = 'event-card';
-                card.style.background = 'url('+event.image+')';
+                card.style.background = 'url('+event.image+') no-repeat center center #000000 ';
                 let currentElem = document.querySelector('.page-main__events-container');
                 currentElem.appendChild(card);
-
+                card.setAttribute('city',event.city);
+                card.setAttribute('month', event.date.slice(3,5));
                 const dayContainer = document.createElement('div');
                 dayContainer.className = 'event-card__date-container';
                 card.appendChild(dayContainer);
@@ -35,28 +33,6 @@ const EventCard = (()=>{
 
 
             }
-           /* document.body.onload = addElements;
-            function addElements() {
-                const card = document.createElement('div');
-                card.className = 'event-card';
-                let currentElem = document.querySelector('.page-main__events-container');
-                currentElem.appendChild(card);
-                const dayContainer = document.createElement('div');
-                dayContainer.className = 'event-card__date-container';
-                card.appendChild(dayContainer);
-                const dayContent = document.createElement('p');
-                dayContent.className = 'event-card__date';
-                dayContainer.appendChild(dayContent);*/
-
-            // }
-           /* data.forEach(event => {
-              /!*  addElements();
-                let DocDayContents = document.querySelectorAll('.event-card__date');
-                for (var DocDayContent of DocDayContents) {
-                    DocDayContent.textContent = event.date.slice(0,2);}*!/
-                /!*day.textContent = event.date.slice(0,2);*!/
-            /!*    day.textContent = event.date.slice(0,2);*!/!*!/
-            })*/
 
         }
     }

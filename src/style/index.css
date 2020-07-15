@@ -34,6 +34,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     height: max-content;
+    min-height: 100vh;
 }
 
 .page-main__container {
@@ -44,6 +45,7 @@ body {
     background-color: #FFFF;
     box-sizing: border-box;
     height: max-content;
+    min-height: 100vh;
 }
 
 .page-main__heading {
@@ -131,6 +133,10 @@ body {
 .event-card__bookmark-icon {
     position: absolute;
     right: 41px;
+}
+
+.event-card.hide {
+    display: none;
 }
 
 .event-card__bookmark-icon:hover, .event-card__bookmark-icon:focus {
