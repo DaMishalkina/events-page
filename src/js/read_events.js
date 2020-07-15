@@ -39,9 +39,9 @@ const EventCard = (()=>{
 
 })();
 
-fetch('http://localhost:3000/events')
+fetch('https://damishalkina.github.io/xsolla-test-assignment/events.json')
     .then((resp) => resp.json())
     .then((data) =>
         /*console.log(data)*/ {
-        EventCard.setData(data);
+        EventCard.setData(data.events);
     });
