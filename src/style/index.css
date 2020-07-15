@@ -77,6 +77,7 @@ body {
     font-family: Avenir-Light, sans-serif;
     font-weight: bold;
     font-size: 24px;
+    background: url("../icons/arrow.svg") no-repeat right .7em top 50%, 0 0;
 }
 
 .select-container__options::-ms-expand {
@@ -96,16 +97,6 @@ body {
     padding: 0;
     position: relative;
     width: max-content;
-}
-.select-container::after {
-    position: absolute;
-    top: 13.5px;
-    right: 22px;
-    font-family: FontAwesome;
-    content: '\f107';
-    display: block;
-    font-size: 24px;
-    z-index: 1;
 }
 
 .page-main__events-container {
