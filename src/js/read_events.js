@@ -26,9 +26,10 @@ const EventCard = (()=>{
 
                 const bookmark = document.createElement('img');
                 bookmark.className = 'event-card__bookmark-icon';
-                bookmark.src = 'icons/bookmark.svg';
+                bookmark.src = 'src/icons/bookmark.svg';
                 bookmark.width = 14;
                 bookmark.height = 18;
+                bookmark.color = '#fff'
                 card.appendChild(bookmark);
 
 

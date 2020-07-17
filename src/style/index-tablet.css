@@ -1,0 +1,66 @@
+@media (min-width: 760px) {
+    .page-main__wrapper {
+        margin: 0;
+        padding: 40px;
+    }
+
+    .page-main__container {
+        margin: 0;
+        padding: 100px 50px 80px;
+    }
+
+    .page-main__heading {
+        margin: 0 0 49px;
+        font-size: 48px;
+    }
+
+    .page-main__selects-container {
+        display: flex;
+        font-size: 24px;
+    }
+
+
+    .select-container__options {
+        margin-left: 20px;
+        padding: 9px 22px 8px;
+        height: 50px;
+        width: 200px;
+        font-size: 24px;
+    }
+
+    .select-container__options option {
+        font-size: 16px;
+    }
+
+    .select-container {
+        margin: 0;
+        margin-right: 15px;
+    }
+
+    .event-card {
+        margin-top: 40px;
+        padding: 40px;
+        width: 580px;
+        height: 400px;
+    }
+
+    .event-card__bookmark-icon {
+        right: 41px;
+    }
+
+
+
+    .event-card__date-container {
+        padding: 9px 13px;
+        width: max-content;
+    }
+
+
+    .event-card__date {
+        font-size: 48px;
+    }
+
+    .event-card__event-title {
+        font-size: 48px;
+    }
+}
