@@ -40,7 +40,7 @@ const EventCard = (()=>{
 
 })();
 
-fetch('https://damishalkina.github.io/xsolla-test-assignment/events.json')
+fetch('https://damishalkina.github.io/events-page/events.json')
     .then((resp) => resp.json())
     .then((data) =>
         /*console.log(data)*/ {
